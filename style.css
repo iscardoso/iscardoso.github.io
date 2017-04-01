@@ -17,7 +17,7 @@ html {
     background-color: #191919;
     border-radius: 5px;
 
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 99%;
 }
@@ -59,6 +59,7 @@ ul.navbar li a.active {
     border-radius: 5px;
 }
 
+/* Display in small screen */
 @media screen and (max-width: 600px) {
     ul.navbar li.name, 
     ul.navbar li {
