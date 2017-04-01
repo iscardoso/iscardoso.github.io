@@ -1,0 +1,101 @@
+
+
+html {
+	background-color: #e6e6e6;
+	color: #0d0d0d;
+}
+
+/*
+ *	Style for navigation bar
+ */
+
+	ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #191919;
+    border-radius: 5px;
+
+    position: fixed;
+    top: 0;
+    width: 99%;
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li.name {
+	float: right;
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    /* For transition on hover */
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+
+ul.navbar li a:hover{
+    background-color: #878787;
+    border-radius: 5px;
+    opacity: 0.6;
+
+}
+
+ul.navbar li a.active {
+    background-color: #878787;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    ul.navbar li.name, 
+    ul.navbar li {
+    	float: none;
+    	padding: 0;
+    	}
+}
+
+
+
+/*
+ * Style for block of information/text on page
+ */
+.information {
+	margin-top: 150px;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.information {
+		margin-top: 250px;
+    	padding: 0;			
+    	}
+}
+
+
+/*
+ * Style for pic-gallery
+ */
+.pic-gallery {
+	margin-top: 50px;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
